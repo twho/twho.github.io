@@ -123,3 +123,12 @@ footer .footer-above {
   padding: 3px;
   font-size: 17px;
 }
+
+.socialButton {
+  margin: 2px; 
+  width:45px; 
+  height:45px;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid black;
+}

@@ -54,6 +54,27 @@
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript">
+      function showColor(input){
+        if (input.alt == "facebook") {
+          document.getElementById('facebookButton').src = "../img/facebook_click.png";
+        } else if (input.alt == "google") {
+          document.getElementById('googleButton').src = "../img/google_click.png";
+        } else if (input.alt == "linkedin") {
+          document.getElementById('linkedinButton').src = "../img/linkedin_click.png";
+        }
+      }
+
+      function showNoColor(input){
+        if (input.alt == "facebook") {
+          document.getElementById('facebookButton').src = "../img/facebook.png";
+        } else if (input.alt == "google") {
+          document.getElementById('googleButton').src = "../img/google.png";
+        } else if (input.alt == "linkedin") {
+          document.getElementById('linkedinButton').src = "../img/linkedin.png";
+        }
+      }
+    </script>
     <section class="portfolioStart">
     		<div class="row">
                 <div class="col-lg-12 text-center portfolioTitle">
@@ -70,13 +91,13 @@
                     <img src="../img/ips_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Intelligent Power Saving"></br>
                     <div class="row">
                 		<div class="col-lg-6">
-                    		<button type="btn-primary" class="portfolioButton">
-                				<i class="icon-white"></i>
-    							<span>View Slides</span>
-          					</button>
+                    		<button type="btn-primary" class="portfolioButton" onclick="location.href='https://docs.google.com/presentation/d/1umvDXKQR5rcE1sNlgSArg5Czj7KGsbo4FwpLisqoBLk/edit#slide=id.g106d18789c_0_73';">
+                				  <i class="icon-white"></i>
+    							        <span>View Slides</span>
+          					   </button>
           				</div>
           				<div class="col-lg-6">
-          					<button type="btn-primary" class="portfolioButton">
+          					<button type="btn-primary" class="portfolioButton" onclick="location.href='https://github.com/twho/IntelligentPowerSaving_Android_Version';">
                 				<i class="icon-white"></i>
     							<span>View on Github</span>
           					</button>
@@ -97,13 +118,13 @@
                     <p align="justify" style="font-size: 18px">  Since I was assigned to smart home group at Intel, I was doing this water monitoring project for the time there. This project concentrates on identify people by analyzing their water use data.</p>
                     <div class="row">
                 		<div class="col-lg-6">
-                    		<button type="btn-primary" class="portfolioButton">
+                     <button type="btn-primary" class="portfolioButton" onclick="location.href='https://docs.google.com/presentation/d/1vIpdHynHvzZDT0vbb0Yj6HF2ROMn-KSENCO20DESzE0/edit?usp=sharing';">
                 				<i class="icon-white"></i>
-    							<span>View Slides</span>
-          					</button>
+    							      <span>View Slides</span>
+          					 </button>
           				</div>
           				<div class="col-lg-6">
-          					<button type="btn-primary" class="portfolioButton">
+          					<button type="btn-primary" class="portfolioButton" onclick="location.href='https://github.com/twho/WaterMonitor_Android_Version';">
                 				<i class="icon-white"></i>
     							<span>View on Github</span>
           					</button>
@@ -123,7 +144,7 @@
                     <img src="../img/ihc_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Intelligent Power Saving"></br>
                     <div class="row">
                 		<div class="col-lg-10 col-lg-offset-1">
-                    		<button type="btn-primary" class="portfolioButton">
+                    		<button type="btn-primary" class="portfolioButton" onclick="location.href='https://docs.google.com/presentation/d/1K8CWzUKe2LPZAC9NchZp--HUEpdoSIotS2DfkXjpoKM/edit#slide=id.g107244c7d5_0_88';">
                 				<i class="icon-white"></i>
     							<span>View Slides</span>
           					</button>
@@ -139,13 +160,13 @@
                   <img src="../img/turn_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Water Flow Rate Monitoring"></br>
                    <div class="row">
                 		<div class="col-lg-6">
-                    		<button type="btn-primary" class="portfolioButton">
+                    		<button type="btn-primary" class="portfolioButton" onclick="location.href='https://docs.google.com/presentation/d/1kLYKqVyg_mmRv4OAjiEuDKmmje31f_DEboiglxnNgx4/edit?usp=sharing';">
                 				<i class="icon-white"></i>
     							<span>View Slides</span>
           					</button>
           				</div>
           				<div class="col-lg-6">
-          					<button type="btn-primary" class="portfolioButton">
+          					<button type="btn-primary" class="portfolioButton" onclick="location.href='https://www.youtube.com/watch?v=Kz7DAO0PKNg'">
                 				<i class="icon-white"></i>
     							<span>View on Youtube</span>
           					</button>
@@ -171,22 +192,16 @@
                             <br>Ann Arbor, Michigan</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                        <h3>My Social Network</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.facebook.com/tsungwei.ho.3';" src="../img/facebook.png" class="socialButton" alt="facebook" id="facebookButton" />
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://plus.google.com/u/0/107511347927717118627';" src="../img/google.png" class="socialButton" alt="google" id="googleButton"/>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.linkedin.com/in/tsung-wei-ho-6b1281b6';" src="../img/linkedin.png" class="socialButton" alt="linkedin" id="linkedinButton"/>
                             </li>
                         </ul>
                     </div>

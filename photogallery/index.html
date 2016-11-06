@@ -80,6 +80,25 @@
       function notDisplayImg(img){ 
         img.style.borderColor  = '#3A81BA';
       }
+      function showColor(input){
+        if (input.alt == "facebook") {
+          document.getElementById('facebookButton').src = "../img/facebook_click.png";
+        } else if (input.alt == "google") {
+          document.getElementById('googleButton').src = "../img/google_click.png";
+        } else if (input.alt == "linkedin") {
+          document.getElementById('linkedinButton').src = "../img/linkedin_click.png";
+        }
+      }
+
+      function showNoColor(input){
+        if (input.alt == "facebook") {
+          document.getElementById('facebookButton').src = "../img/facebook.png";
+        } else if (input.alt == "google") {
+          document.getElementById('googleButton').src = "../img/google.png";
+        } else if (input.alt == "linkedin") {
+          document.getElementById('linkedinButton').src = "../img/linkedin.png";
+        }
+      }
     </script>
     <section class="photoStart">
         <div class="row">
@@ -134,22 +153,16 @@
                             <br>Ann Arbor, Michigan</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                        <h3>My Social Network</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.facebook.com/tsungwei.ho.3';" src="../img/facebook.png" class="socialButton" alt="facebook" id="facebookButton" />
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://plus.google.com/u/0/107511347927717118627';" src="../img/google.png" class="socialButton" alt="google" id="googleButton"/>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.linkedin.com/in/tsung-wei-ho-6b1281b6';" src="../img/linkedin.png" class="socialButton" alt="linkedin" id="linkedinButton"/>
                             </li>
                         </ul>
                     </div>
