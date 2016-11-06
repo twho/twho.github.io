@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tsung-Wei Ho</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+       #map {
+        height: 320px;
+        width: 100%;
+        padding: 0px;
+       }
+       body {
+        background-image: url("img/background_img4.jpg");
+        background-size:cover;
+       }
+    </style>
+  </head>
+  <header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <div class="row">
+            <div class="col-lg-4">
+              <input type="image" src="img/logo2.png" class="titleButton" alt="Tsung-Wei Ho's logo" style="margin: 3px; width:45px; height:45px;"/>
+            </div>
+            <div class="col-lg-8">
+              <button type="button" class="navbar-toggle">
+              </button>
+              <a class="navbar-brand" href="#page-top">Tsun-Wei Ho</a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right" id="twho-navbar">
+            <li class="page-scroll">
+              <a href="#Home">Home</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#About">About</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#PhotoGallery">Photo Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <section class="home">
+        <div class="row">
+            <div class="col-lg-12 text-center homeTitle">
+                <h2>Welcome!</h2>
+                <div class="col-lg-8 col-lg-offset-2">
+                <h4>﻿Welcome to Tsung Wei Ho's personal website.
+                In addition to the information on the web,
+                I am glad to answer any questions you may concern.
+                Please contact me at htw1020@hotmail.com.
+​                I will reply ASAP, thanks.</h4>
+                </div>
+            </div>
+        </div>
+   </section>
+   <section class="homeMyBrief">
+        <div class="container1">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                <div id="aboutMeText">
+                  <h2>About Me</h2>
+                    <p align="justify">I was a Mechanical Engineering (ME) undergraduate (2014) and an Electrical Engineering (EE) graduate (2016) in Taiwan. Currently, I am studying at University of Michigan School of Information with specialization in Human-Computer Interaction. With my engineering backgrounds and design experiences, I look forward to serving as a communication bridge between designers and developers in relevant industries.</p>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/tsungweiho.png" class="img-rounded" id= "myImg" alt="My image">
+                </div>
+            </div>
+        </div>
+        <hr></hr>
+        <div class="container2">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">  
+                <div id="map"></div>
+                  <script>
+                    function initMap() {
+                      var uluru = {lat: 22.6273, lng: 120.3014};
+                      var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 5,
+                        center: uluru
+                      });
+                      var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                      });
+                    }
+                  </script>
+                  <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxydPJ7b9K403XpaagtHlZMIqQkhz14GQ&callback=initMap">
+                  </script>
+                </div>
+                <div class="col-lg-4">
+                <div id="aboutMeText" >
+                 <h2>My Hometown</h2>
+                  <p align="justify" >I was born in Kaohsiung, Taiwan. I finished my elementary school and high schools in Kaohsiung and went to Taipei for my college study.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <hr></hr>
+    </section>
+  </body>
+  <footer>
+    <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>University of Michigan School of Information
+                            <br>Ann Arbor, Michigan</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About this website</h3>
+                        <p>Powered by <a href="http://startbootstrap.com" style="color: white">Tsung-Wei Ho</a>. </br> All rights reserved. 2016 &reg;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </footer>
+</html>

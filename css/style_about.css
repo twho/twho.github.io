@@ -1,0 +1,125 @@
+.navbar-custom {
+  background: #3A81BA;
+  font-family: "Consolas", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+.navbar-custom a:focus {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  color: white;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: white;
+}
+
+.navbar-custom .navbar-nav li a {
+  color: white;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #C4C4C4;
+  outline: none;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: white;
+}
+.navbar-custom .navbar-nav li.active a {
+  color: white;
+  background: #C4C4C4;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  color: white;
+  background: #C4C4C4;
+}
+
+.navbar-custom .navbar-brand a:hover {
+  color: #C4C4C4;
+  outline: none;
+}
+
+.aboutSection {
+  margin-top: 0px;
+  color: #C4C4C4;
+  font-size: 20px;
+}
+
+#myImg {
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+footer {
+  color: white;
+}
+
+footer .footer-above {
+  padding-top: 10px;
+  background-color: #3A81BA;
+}
+
+.btn-outline {
+  color: white;
+  font-size: 20px;
+  border: solid 2px white;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #18BC9C;
+  background: white;
+  border: solid 2px white;
+}
+
+.aboutStart {
+  margin-top: 50px;
+  color: #C4C4C4;
+  font-size: 20px;
+}
+
+.aboutTitle {
+  color: white;
+  padding: 20px;
+  background-color: #2C3E50;
+  font-family: "Consolas";
+  font-weight: 700;
+  border: none;
+}
+
+
+.titleButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.category {
+  color: white;
+  background: #0000AA;
+  padding: 5px;
+}
+
+#resumeContentBold {
+  font-family: Arial;
+  color: black;
+  padding: 3px;
+}
+
+#resumeContent {
+  font-family: "Consolas";
+  color: #C4C4C4;
+  padding: 3px;
+  font-size: 17px;
+}
