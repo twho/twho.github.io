@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tsung-Wei Ho</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/style_photogallery.css">
+    <style>
+       #map {
+        height: 320px;
+        width: 100%;
+        padding: 0px;
+       }
+       body {
+        background-image: url("../img/background_img3.jpg");
+        background-size:cover;
+       }
+      }
+    </style>
+  </head>
+  <header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <div class="row">
+            <div class="col-lg-4">
+              <input type="image" onclick="location.href='https://twho.github.io/';" src="../img/logo2.png" class="titleButton" alt="Tsung-Wei Ho's logo" style="margin: 3px; width:45px; height:45px;"/>
+            </div>
+            <div class="col-lg-8">
+              <button type="button" class="navbar-toggle">
+              </button>
+              <a class="navbar-brand" href="https://twho.github.io/">Tsun-Wei Ho</a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right" id="twho-navbar">
+            <li class="page-scroll">
+              <a href="https://twho.github.io/">Home</a>
+            </li>
+            <li class="page-scroll">
+              <a href="https://twho.github.io/about/">About</a>
+            </li>
+            <li class="page-scroll">
+              <a href="https://twho.github.io/portfolio/">Portfolio</a>
+            </li>
+            <li class="page-scroll">
+              <a href="https://twho.github.io/photogallery/">Photo Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript">
+      function displayImg(img){
+        document.getElementById('displayImage').src = img.src;
+        img.style.borderColor  = '#18BC9C';
+        if (img.alt == "img1") {
+          document.getElementById("photoTitle").innerHTML = "University of Michigan"
+          document.getElementById("photoDetails").innerHTML = "The University of Michigan (U-M, UM, UMich, or U of M), frequently referred to simply as Michigan, is a public research university in Ann Arbor, Michigan, United States. Founded in 1817 in Detroit as the Catholepistemiad, or University of Michigania, 20 years before the Michigan Territory became a state, the University of Michigan is the states oldest university. The university moved to Ann Arbor in 1837 onto 40 acres (16 ha) of what is now known as Central Campus."
+        } else if (img.alt == 'img2') {
+          document.getElementById("photoTitle").innerHTML = "Chicago"
+          document.getElementById("photoDetails").innerHTML = "Chicago, officially the City of Chicago, is the third-most populous city in the United States. With over 2.7 million residents, it is the most populous city in the state of Illinois and the Midwestern United States, and the county seat of Cook County. The Chicago metropolitan area, often referred to as Chicagoland, has nearly 10 million people and is the third-largest in the U.S."
+        } else if (img.alt == 'img3') {
+          document.getElementById("photoTitle").innerHTML = "New York City"
+          document.getElementById("photoDetails").innerHTML = "The City of New York, often called New York City, New York, or simply The City, is the most populous city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, one of the most populous urban agglomerations in the world. With a U.S. Census Bureau-estimated 2015 population of 8,550,405 distributed over a land area of just 305 square miles (790 km2), New York is also the most densely populated major city in the United States."
+        } else if (img.alt == 'img4') {
+          document.getElementById("photoTitle").innerHTML = "Brooklyn"
+          document.getElementById("photoDetails").innerHTML = "Brooklyn is the most populous of New York City's five boroughs, with a Census-estimated 2,636,735 residents in 2015. It is geographically adjacent to the borough of Queens at the southwestern end of Long Island. Since 1896, Brooklyn has had the same boundaries as Kings County, the most populous county in the U.S. state of New York, and the second-most densely populated county in the United States, after the county of New York"
+        }
+      }
+      function notDisplayImg(img){ 
+        img.style.borderColor  = '#3A81BA';
+      }
+    </script>
+    <section class="photoStart">
+        <div class="row">
+            <div class="row">
+                <div class="col-lg-12 text-center homeTitle">
+                <h2>Photo Gallery</h2>
+                <div class="col-lg-8 col-lg-offset-2">
+                <h4>﻿These photos are all taken by me!</h4>
+                </div>
+            </div>
+        </div>
+   </section>
+   <section class="homeMyBrief">
+        <div class="container1">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                  <img src="../img/logo.png" class="img-rounded" id= "displayImage" alt="Displayed image">
+                </div>
+                <div class="col-lg-4" id="PhotoText">
+                  <h2 id="photoTitle">Welcome to my photo gallery</h2>
+                  <h4 id="photoDetails">﻿Please Click the photo below to browse the gallery!</h4>
+                </div>
+            </div>
+        </div>
+        <hr></hr>
+        <div class="container2">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-2">
+                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img1" src="../img/sample_img1.jpg" class="img-rounded preview" id= "galleryImg">
+                </div>
+                <div class="col-lg-2">
+                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img2" src="../img/sample_img2.jpg" class="img-rounded preview" id= "galleryImg">
+                </div>
+                <div class="col-lg-2">
+                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img3" src="../img/sample_img3.jpg" class="img-rounded preview" id= "galleryImg">
+                </div>
+                <div class="col-lg-2">
+                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img4" src="../img/sample_img4.jpg" class="img-rounded preview" id= "galleryImg">
+                </div>
+            </div>
+        </div>
+        <hr></hr>
+    </section>
+  </body>
+  <footer>
+    <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>University of Michigan School of Information
+                            <br>Ann Arbor, Michigan</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About this website</h3>
+                        <p>Powered by <a href="http://startbootstrap.com" style="color: white">Tsung-Wei Ho</a>. </br> All rights reserved. 2016 &reg;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </footer>
+</html>
