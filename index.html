@@ -7,6 +7,7 @@
     <title>Tsung-Wei Ho</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="js/bootstrap.min.css" rel="stylesheet">
     <style>
        #map {
         height: 320px;
@@ -22,33 +23,34 @@
   <header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container">
         <div class="navbar-header page-scroll">
-          <div class="row">
-            <div class="col-lg-4">
-              <input type="image" onclick="location.href='https://twho.github.io/';" src="img/logo2.png" class="titleButton" alt="Tsung-Wei Ho's logo" style="margin: 3px; width:45px; height:45px;"/>
-            </div>
-            <div class="col-lg-8">
-              <button type="button" class="navbar-toggle">
-              </button>
-              <a class="navbar-brand" href="https://twho.github.io/">Tsun-Wei Ho</a>
-            </div>
-          </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">Tsung Wei Ho</a>
+            <input type="image" onclick="location.href='https://twho.github.io/';" src="img/logo2.png" class="titleButton" alt="Tsung-Wei Ho's logo" style="margin: 3px; width:45px; height:45px;"/>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right" id="twho-navbar">
-            <li class="page-scroll">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li class="page-scroll active">
               <a href="https://twho.github.io/">Home</a>
             </li>
             <li class="page-scroll">
               <a href="https://twho.github.io/about.html">About</a>
             </li>
             <li class="page-scroll">
-              <a href="https://twho.github.io/portfolio/">Portfolio</a>
+              <a href="https://twho.github.io/portfolio.html">Portfolio</a>
             </li>
             <li class="page-scroll">
-              <a href="https://twho.github.io/photogallery/">Photo Gallery</a>
+              <a href="https://twho.github.io/photogallery.html">Photo Gallery</a>
             </li>
           </ul>
         </div>
@@ -56,8 +58,9 @@
     </nav>
   </header>
   <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.js"></script>
      <script type="text/javascript" language="javascript">
       function showColor(input){
         if (input.alt == "facebook") {
@@ -94,7 +97,7 @@
         </div>
    </section>
    <section class="homeMyBrief">
-        <div class="container1">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
                 <div id="aboutMeText">
@@ -108,7 +111,7 @@
             </div>
         </div>
         <hr></hr>
-        <div class="container2">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">  
                 <div id="map"></div>

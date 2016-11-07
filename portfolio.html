@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tsung-Wei Ho</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style_portfolio.css">
     <style>
        #map {
@@ -17,34 +17,32 @@
   </head>
   <header>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container">
         <div class="navbar-header page-scroll">
-          <div class="row">
-            <div class="col-lg-4">
-              <input type="image" onclick="location.href='https://twho.github.io/';" src="../img/logo2.png" class="titleButton" alt="Tsung-Wei Ho's logo" style="margin: 3px; width:45px; height:45px;"/>
-            </div>
-            <div class="col-lg-8">
-              <button type="button" class="navbar-toggle">
-              </button>
-              <a class="navbar-brand" href="https://twho.github.io/">Tsun-Wei Ho</a>
-            </div>
-          </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">Tsung Wei Ho</a>
+            <input type="image" onclick="location.href='https://twho.github.io/';" src="img/logo2.png" class="titleButton" alt="Tsung-Wei Ho's logo" style="margin: 3px; width:45px; height:45px;"/>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-         <ul class="nav navbar-nav navbar-right" id="twho-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
             <li class="page-scroll">
               <a href="https://twho.github.io/">Home</a>
             </li>
             <li class="page-scroll">
-              <a href="https://twho.github.io/about/">About</a>
+              <a href="https://twho.github.io/about.html">About</a>
+            </li>
+            <li class="page-scroll active">
+              <a href="https://twho.github.io/portfolio.html">Portfolio</a>
             </li>
             <li class="page-scroll">
-              <a href="https://twho.github.io/portfolio/">Portfolio</a>
-            </li>
-            <li class="page-scroll">
-              <a href="https://twho.github.io/photogallery/">Photo Gallery</a>
+              <a href="https://twho.github.io/photogallery.html">Photo Gallery</a>
             </li>
           </ul>
         </div>
@@ -53,7 +51,7 @@
   </header>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" language="javascript">
       function showColor(input){
         if (input.alt == "facebook") {
@@ -88,7 +86,7 @@
                     <p align="justify" style="font-size: 18px">  This app is the user interface of our building management system. Our building management system consists of a couple works such as sensing, data aggregation, data analysis, middleware and user interface. This is the Android version user interface for our system. In addition, the underlying analytic work of this system, which is based on an EM-GAM-AR model, is introduced in this page as well.</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-1">
-                    <img src="../img/ips_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Intelligent Power Saving"></br>
+                    <img src="img/ips_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Intelligent Power Saving"></br>
                     <div class="row">
                 		<div class="col-lg-6">
                     		<button type="btn-primary" class="portfolioButton" onclick="location.href='https://docs.google.com/presentation/d/1umvDXKQR5rcE1sNlgSArg5Czj7KGsbo4FwpLisqoBLk/edit#slide=id.g106d18789c_0_73';">
@@ -110,8 +108,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                  <img src="../img/wm_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Water Flow Rate Monitoring"></br>
-                  <img src="../img/intel_ccc.png" class="img-rounded img-responsive center-block intelImg" id= "ipsImg" alt="Intel-NTU Connected Context Computing Center"></br>
+                  <img src="img/wm_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Water Flow Rate Monitoring"></br>
+                  <img src="img/intel_ccc.png" class="img-rounded img-responsive center-block intelImg" id= "ipsImg" alt="Intel-NTU Connected Context Computing Center"></br>
                 </div>
                 <div class="col-lg-4 col-lg-offset-1">
                 <h2>Water Flow Rate Monitoring</h2>
@@ -141,7 +139,7 @@
                     <p align="justify" style="font-size: 18px">  The Intelligent Home Care system is the final project of the Internet of Things class. Motivated by current situation in Taiwan, we use the techniques learned from the class to implement this innovative system. Since the current solutions to elders' care in Taiwan are not good enough, we focus on ameliorating the problems caused by traditional care systems.</p>
                 </div>
                 <div class="col-lg-3 col-lg-offset-1">
-                    <img src="../img/ihc_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Intelligent Power Saving"></br>
+                    <img src="img/ihc_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Intelligent Power Saving"></br>
                     <div class="row">
                 		<div class="col-lg-10 col-lg-offset-1">
                     		<button type="btn-primary" class="portfolioButton" onclick="location.href='https://docs.google.com/presentation/d/1K8CWzUKe2LPZAC9NchZp--HUEpdoSIotS2DfkXjpoKM/edit#slide=id.g107244c7d5_0_88';">
@@ -157,7 +155,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                  <img src="../img/turn_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Water Flow Rate Monitoring"></br>
+                  <img src="img/turn_project.png" class="img-rounded img-responsive center-block portfolioImg" id= "ipsImg" alt="Water Flow Rate Monitoring"></br>
                    <div class="row">
                 		<div class="col-lg-6">
                     		<button type="btn-primary" class="portfolioButton" onclick="location.href='https://docs.google.com/presentation/d/1kLYKqVyg_mmRv4OAjiEuDKmmje31f_DEboiglxnNgx4/edit?usp=sharing';">
@@ -195,13 +193,13 @@
                         <h3>My Social Network</h3>
                         <ul class="list-inline">
                             <li>
-                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.facebook.com/tsungwei.ho.3';" src="../img/facebook.png" class="socialButton" alt="facebook" id="facebookButton" />
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.facebook.com/tsungwei.ho.3';" src="img/facebook.png" class="socialButton" alt="facebook" id="facebookButton" />
                             </li>
                             <li>
-                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://plus.google.com/u/0/107511347927717118627';" src="../img/google.png" class="socialButton" alt="google" id="googleButton"/>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://plus.google.com/u/0/107511347927717118627';" src="img/google.png" class="socialButton" alt="google" id="googleButton"/>
                             </li>
                             <li>
-                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.linkedin.com/in/tsung-wei-ho-6b1281b6';" src="../img/linkedin.png" class="socialButton" alt="linkedin" id="linkedinButton"/>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.linkedin.com/in/tsung-wei-ho-6b1281b6';" src="img/linkedin.png" class="socialButton" alt="linkedin" id="linkedinButton"/>
                             </li>
                         </ul>
                     </div>

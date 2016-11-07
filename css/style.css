@@ -1,3 +1,10 @@
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+}
+
 .navbar-custom {
   background: #3A81BA;
   font-family: "Consolas", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -22,7 +29,7 @@
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #C4C4C4;
+  color: #00AA88;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -31,7 +38,7 @@
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #C4C4C4;
+  background: #00AA88;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tsung-Wei Ho</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style_photogallery.css">
     <style>
        #map {
@@ -22,34 +22,32 @@
   </head>
   <header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container">
         <div class="navbar-header page-scroll">
-          <div class="row">
-            <div class="col-lg-4">
-              <input type="image" onclick="location.href='https://twho.github.io/';" src="../img/logo2.png" class="titleButton" alt="Tsung-Wei Ho's logo" style="margin: 3px; width:45px; height:45px;"/>
-            </div>
-            <div class="col-lg-8">
-              <button type="button" class="navbar-toggle">
-              </button>
-              <a class="navbar-brand" href="https://twho.github.io/">Tsun-Wei Ho</a>
-            </div>
-          </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">Tsung Wei Ho</a>
+            <input type="image" onclick="location.href='https://twho.github.io/';" src="img/logo2.png" class="titleButton" alt="Tsung-Wei Ho's logo" style="margin: 3px; width:45px; height:45px;"/>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right" id="twho-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
             <li class="page-scroll">
               <a href="https://twho.github.io/">Home</a>
             </li>
             <li class="page-scroll">
-              <a href="https://twho.github.io/about/">About</a>
+              <a href="https://twho.github.io/about.html">About</a>
             </li>
             <li class="page-scroll">
-              <a href="https://twho.github.io/portfolio/">Portfolio</a>
+              <a href="https://twho.github.io/portfolio.html">Portfolio</a>
             </li>
-            <li class="page-scroll">
-              <a href="https://twho.github.io/photogallery/">Photo Gallery</a>
+            <li class="page-scroll active">
+              <a href="https://twho.github.io/photogallery.html">Photo Gallery</a>
             </li>
           </ul>
         </div>
@@ -58,7 +56,7 @@
   </header>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" language="javascript">
       function displayImg(img){
         document.getElementById('displayImage').src = img.src;
@@ -115,7 +113,7 @@
         <div class="container1">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                  <img src="../img/logo.png" class="img-rounded" id= "displayImage" alt="Displayed image">
+                  <img src="img/logo.png" class="img-rounded" id= "displayImage" alt="Displayed image">
                 </div>
                 <div class="col-lg-4" id="PhotoText">
                   <h2 id="photoTitle">Welcome to my photo gallery</h2>
@@ -127,16 +125,16 @@
         <div class="container2">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-2">
-                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img1" src="../img/sample_img1.jpg" class="img-rounded preview" id= "galleryImg">
+                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img1" src="img/sample_img1.jpg" class="img-rounded preview" id= "galleryImg">
                 </div>
                 <div class="col-lg-2">
-                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img2" src="../img/sample_img2.jpg" class="img-rounded preview" id= "galleryImg">
+                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img2" src="img/sample_img2.jpg" class="img-rounded preview" id= "galleryImg">
                 </div>
                 <div class="col-lg-2">
-                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img3" src="../img/sample_img3.jpg" class="img-rounded preview" id= "galleryImg">
+                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img3" src="img/sample_img3.jpg" class="img-rounded preview" id= "galleryImg">
                 </div>
                 <div class="col-lg-2">
-                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img4" src="../img/sample_img4.jpg" class="img-rounded preview" id= "galleryImg">
+                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img4" src="img/sample_img4.jpg" class="img-rounded preview" id= "galleryImg">
                 </div>
             </div>
         </div>
@@ -156,13 +154,13 @@
                         <h3>My Social Network</h3>
                         <ul class="list-inline">
                             <li>
-                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.facebook.com/tsungwei.ho.3';" src="../img/facebook.png" class="socialButton" alt="facebook" id="facebookButton" />
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.facebook.com/tsungwei.ho.3';" src="img/facebook.png" class="socialButton" alt="facebook" id="facebookButton" />
                             </li>
                             <li>
-                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://plus.google.com/u/0/107511347927717118627';" src="../img/google.png" class="socialButton" alt="google" id="googleButton"/>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://plus.google.com/u/0/107511347927717118627';" src="img/google.png" class="socialButton" alt="google" id="googleButton"/>
                             </li>
                             <li>
-                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.linkedin.com/in/tsung-wei-ho-6b1281b6';" src="../img/linkedin.png" class="socialButton" alt="linkedin" id="linkedinButton"/>
+                                <img type="image" onmouseover = "showColor(this)" onmouseout = "showNoColor(this)" onclick="location.href='https://www.linkedin.com/in/tsung-wei-ho-6b1281b6';" src="img/linkedin.png" class="socialButton" alt="linkedin" id="linkedinButton"/>
                             </li>
                         </ul>
                     </div>
