@@ -7,6 +7,7 @@
     <title>Tsung-Wei Ho</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style_photogallery.css">
+     <link rel="stylesheet" href="dist/css/lightbox.min.css">
     <style>
        #map {
         height: 320px;
@@ -14,7 +15,7 @@
         padding: 0px;
        }
        body {
-        background-image: url("../img/background_img3.jpg");
+        background-image: url("img/background_img3.jpg");
         background-size:cover;
        }
     </style>
@@ -22,6 +23,7 @@
   <header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container">
         <div class="navbar-header page-scroll">
@@ -56,6 +58,12 @@
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      lightbox.option({
+        'resizeDuration': 500,
+        'wrapAround': true
+      })
+    </script>
     <script type="text/javascript" language="javascript">
       function displayImg(img){
         document.getElementById('displayImage').src = img.src;
@@ -72,28 +80,32 @@
         } else if (img.alt == 'img4') {
           document.getElementById("photoTitle").innerHTML = "Brooklyn"
           document.getElementById("photoDetails").innerHTML = "Brooklyn is the most populous of New York City's five boroughs, with a Census-estimated 2,636,735 residents in 2015. It is geographically adjacent to the borough of Queens at the southwestern end of Long Island. Since 1896, Brooklyn has had the same boundaries as Kings County, the most populous county in the U.S. state of New York, and the second-most densely populated county in the United States, after the county of New York"
+        } else if (img.alt == 'img5') {
+          document.getElementById("photoTitle").innerHTML = "Yankee Stadium"
+          document.getElementById("photoDetails").innerHTML = "Yankee Stadium is a stadium located in the Bronx, a borough of New York City. It serves as the home ballpark for the New York Yankees of Major League Baseball (MLB), and the home stadium of New York City FC of Major League Soccer (MLS). The $2.3 billion stadium, built with $1.2 billion in public subsidies, replaced the original Yankee Stadium in 2009."
         }
       }
       function notDisplayImg(img){ 
         img.style.borderColor  = '#3A81BA';
       }
+
       function showColor(input){
         if (input.alt == "facebook") {
-          document.getElementById('facebookButton').src = "../img/facebook_click.png";
+          document.getElementById('facebookButton').src = "img/facebook_click.png";
         } else if (input.alt == "google") {
-          document.getElementById('googleButton').src = "../img/google_click.png";
+          document.getElementById('googleButton').src = "img/google_click.png";
         } else if (input.alt == "linkedin") {
-          document.getElementById('linkedinButton').src = "../img/linkedin_click.png";
+          document.getElementById('linkedinButton').src = "img/linkedin_click.png";
         }
       }
 
       function showNoColor(input){
         if (input.alt == "facebook") {
-          document.getElementById('facebookButton').src = "../img/facebook.png";
+          document.getElementById('facebookButton').src = "img/facebook.png";
         } else if (input.alt == "google") {
-          document.getElementById('googleButton').src = "../img/google.png";
+          document.getElementById('googleButton').src = "img/google.png";
         } else if (input.alt == "linkedin") {
-          document.getElementById('linkedinButton').src = "../img/linkedin.png";
+          document.getElementById('linkedinButton').src = "img/linkedin.png";
         }
       }
     </script>
@@ -112,7 +124,9 @@
         <div class="container1">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                  <img src="img/logo.png" class="img-rounded" id= "displayImage" alt="Displayed image">
+                  <a class="example-image-link" href= "img/sample_img1.jpg" data-lightbox="example-1">
+                    <img src="img/logo.png" class="img-rounded" id= "displayImage" alt="Displayed image">
+                  </a>
                 </div>
                 <div class="col-lg-4" id="PhotoText">
                   <h2 id="photoTitle">Welcome to my photo gallery</h2>
@@ -123,17 +137,30 @@
         <hr></hr>
         <div class="container2">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-2">
-                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img1" src="img/sample_img1.jpg" class="img-rounded preview" id= "galleryImg">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <a class="example-image-link" href="img/sample_img1.jpg" data-lightbox="example-1">
+                      <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img1" src="img/sample_img1.jpg" class="img-rounded preview" id= "galleryImg">
+                    </a>
                 </div>
                 <div class="col-lg-2">
-                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img2" src="img/sample_img2.jpg" class="img-rounded preview" id= "galleryImg">
+                    <a class="example-image-link" href="img/sample_img2.jpg" data-lightbox="example-1">
+                      <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img2" src="img/sample_img2.jpg" class="img-rounded preview" id= "galleryImg">
+                    </a>
                 </div>
                 <div class="col-lg-2">
-                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img3" src="img/sample_img3.jpg" class="img-rounded preview" id= "galleryImg">
+                    <a class="example-image-link" href="img/sample_img3.jpg" data-lightbox="example-1">
+                      <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img3" src="img/sample_img3.jpg" class="img-rounded preview" id= "galleryImg">
+                    </a>
                 </div>
                 <div class="col-lg-2">
-                    <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img4" src="img/sample_img4.jpg" class="img-rounded preview" id= "galleryImg">
+                    <a class="example-image-link" href="img/sample_img4.jpg" data-lightbox="example-1">
+                      <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img4" src="img/sample_img4.jpg" class="img-rounded preview" id= "galleryImg">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a class="example-image-link" href="img/sample_img5.jpg" data-lightbox="example-1">
+                      <img onmouseover = "displayImg(this)" onmouseout = "notDisplayImg(this)" alt = "img5" src="img/sample_img5.jpg" class="img-rounded preview" id= "galleryImg">
+                    </a>
                 </div>
             </div>
         </div>
